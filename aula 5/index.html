@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div style="background-color:red; padding: 20px;"><h1>principais formatações</h1></div>
+
+    <h2>Negrito / Destaque</h2>
+    <p>Na frase temos uma <b>parte do texto em negrito</b> usando a tag B (não semântica).</p>
+    <p>Na frase temos uma <strong>parte do texto em negrito</strong> usando a tag STRONG (com semântica).</p>
+
+    <h2>Itálico / Ênfase</h2>
+    <p>Nesta frase vamos entrar com uma palavra em <i>itálico</i> usando a tag I (não semântica).</p>
+    <p>Nesta frase vamos entrar com uma palavra em <em>itálico</em> usando a tag EM (com semântica).</p>
+
+    <h2>Texto marcado</h2>
+    <p>Aqui vamos usar um <mark style="background-color: green;color:  white;" >texto marcado</mark> com a tag MARK.</p>
+
+    <h2>Texto grande e pequeno</h2>
+    <p>Texto normal com um <mark><small>trecho pequeno</small></mark> nesta frase.</p>
+
+    <h2>Texto deletado</h2>
+    <p>Neste parágrafo temos um <del>texto excluído</del> da frase.(forma semantica)</p>
+
+    <h2>texto inserido</h2>
+    <p>nesta frase vamos demontrar como <address> destacar um texto que foi inserido</address>na frase de forma semantica</p>
+    <p>nesta frase vamos demontrar como <u> destacar um texto que foi inserido </u> na frase  de forma nao semantica</p>
+
+    <h2>texto sobrescrito</h2>
+    <p>vamos demontrar uma formula da equaçao do segundo grau ax<sup>2</sup>+bx+c=0 usando tag sup</p
+    <h2>subscrito</h2>
+    <p>vamos demontrar o subscrito com a formula da agua h<sub>2</sub>o</p>
+        <h2>Trecho de código fonte</h2>
+        <p>neste exmplo vou demontrar um trecho de codigo inserindo o comando <Document.getelementbyId('edtcodigo') que é um comando java script inserindo um longo codigo  me pyton:</p>
+        <pre id="edtcodigo"><code></code>
+<p>Exemplo de código JavaScript:</p>
+
+<pre><code>document.getElementById('edtcodigo');</code></pre>
+
+<h3>Python</h3>
+<pre id="edtcodigo"><code>
+def equacao_segundo_grau(a, b, c):
+    import math
+    delta = b**2 - 4*a*c
+
+
+if delta < 0:
+    return "A equação não possui raízes reais."
+
+x1 = (-b + math.sqrt(delta)) / (2*a)
+x2 = (-b - math.sqrt(delta)) / (2*a)
+
+return {
+    "delta": delta,
+    "x1": x1,
+    "x2": x2
+}
+
+
+</code></pre>
+
+<h3>JavaScript</h3>
+<pre><code>
+function equacaoSegundoGrau(a, b, c) {
+    let delta = b * b - 4 * a * c;
+
+
+if (delta < 0) {
+    return "A equação não possui raízes reais.";
+}
+
+let x1 = (-b + Math.sqrt(delta)) / (2 * a);
+let x2 = (-b - Math.sqrt(delta)) / (2 * a);
+
+return {
+    delta: delta,
+    x1: x1,
+    x2: x2
+};
+
+
+} </code></pre>
+
+<h2>Resultado com JavaScript</h2>
+<p id="resultado"></p>
+
+<script>
+var a = 2;
+var b = 4;
+
+var x = -b / a;
+
+var resultado = document.getElementById("resultado");
+resultado.innerText = "O valor de x é: " + x;
+</script>
+
+</body>
+</html>
+
+
