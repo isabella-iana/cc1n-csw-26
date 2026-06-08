@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 30px;
+}
+
+#titulo {
+    text-align: center;
+    color: #2b3a67;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.caixa {
+    background-color: #ffffff;
+    border: 2px solid #2b3a67;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 500px;
+    max-width: 90%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.caixa h2 {
+    color: #2b3a67;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 8px;
+}
+
+.musica {
+    display: block;
+    margin: 12px 0;
+    padding: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #1BA1E2;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.musica::before {
+    content: "♬ ";
+}
+
+.musica::after {
+    content: " ♬";
+}
+
+.musica:hover {
+    background-color: #0066CC;
+}
+
+.musica:active {
+    background-color: #b30000;
+}
